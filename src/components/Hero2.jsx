@@ -44,7 +44,7 @@ const Hero2 = () => {
               })}
             </motion.div>
             {/*text*/}
-            <div className="flex flex-col text-justify text-neutral-500 ">
+            <div className="flex flex-col text-center text-neutral-500 ">
               <motion.p
                 variants={fadeIn("down", 0.2)}
                 initial={"hidden"}
