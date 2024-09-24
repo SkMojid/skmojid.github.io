@@ -12,8 +12,8 @@ export default ({
         xxl: "1440px",
       },
       colors:  {
-        v: '#7c7cb3',
-        vBtnHover: "#5b5bae",
+        v: '#3A5A40',
+        vBtnHover: "#588157",
       }
     }
 

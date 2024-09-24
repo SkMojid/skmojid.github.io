@@ -1,10 +1,7 @@
 import React, {useEffect} from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
-import Multimedia from "../components/Multimedia";
-import ItchGames from "../components/ItchGames";
 import WebDev from "../components/WebDev"
-import GraphicDesign from "../components/GraphicDesign";
 import TextSpan from '../utils/textSpan';
 
 
@@ -12,7 +9,7 @@ const Projects = () => {
   const name = "My projects.".split("");
 
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -35,10 +32,6 @@ const Projects = () => {
               })}
             </motion.div>
             <WebDev />
-            <Multimedia />
-            <ItchGames />
-            <GraphicDesign/>
-          
           </div>
         </section>
     </main>

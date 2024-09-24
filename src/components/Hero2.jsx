@@ -1,10 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import TextSpan from "../utils/textSpan";
 import { FiDownload } from "react-icons/fi";
-import about from "../images/Georgie-About.png";
-import Cv from "../constants/CV-GiorgioFaini.pdf";
+import about from "../images/About.jpg";
+import Cv from "../constants/CV.pdf";
 
 const Hero2 = () => {
   const name = "About me.".split("");
@@ -22,7 +21,8 @@ const Hero2 = () => {
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
               src={about}
-              alt="A fun vector image depicting Giorgio Faini working on his pc"
+              className="rounded-full"
+              alt="Mojid Sk"
             />
           </div>
           {/*text-box*/}
@@ -53,9 +53,7 @@ const Hero2 = () => {
               >
                 I am a constantly evolving web developer passionate about
                 designing captivating web solutions with great attention to
-                detail. I also enjoy developing 2d games and applications for
-                edutainment and gamification, blending creativity with
-                technology.
+                detail.
               </motion.p>
             </div>
             {/*cv button*/}
@@ -69,7 +67,7 @@ const Hero2 = () => {
               <a
                 className="flex items-center gap-2"
                 href={Cv}
-                download="CV-GiorgioFaini"
+                download="CV-Mojid-Sk"
                 rel="noopener noreferrer"
               >
                 <FiDownload size={20} />
