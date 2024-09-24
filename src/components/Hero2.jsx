@@ -44,7 +44,7 @@ const Hero2 = () => {
               })}
             </motion.div>
             {/*text*/}
-            <div className="flex flex-col text-center text-neutral-500 ">
+            <div className="flex flex-col text-center text-neutral-500 mt-2">
               <motion.p
                 variants={fadeIn("down", 0.2)}
                 initial={"hidden"}
@@ -58,7 +58,7 @@ const Hero2 = () => {
             </div>
             {/*cv button*/}
             <motion.div
-              className="px-5 py-2 mt-2 text-sm font-bold text-white uppercase border-b-4 rounded-full bg-vBtn bg-v hover:bg-vBtnHover border-vBtnHover hover:border-v"
+              className="px-5 py-2 mt-4 text-sm font-bold text-white uppercase border-b-4 rounded-full bg-vBtn bg-v hover:bg-vBtnHover border-vBtnHover hover:border-v"
               variants={fadeIn("down", 0.3)}
               initial={"hidden"}
               whileInView={"show"}
