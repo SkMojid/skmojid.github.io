@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { Link } from "react-router-dom";
 import TextSpan from "../utils/textSpan";
-import { FaLinkedin, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaEnvelope } from "react-icons/fa";
 import avatar from "../images/Home.jpg";
 
 const Hero = () => {
@@ -74,21 +74,19 @@ const Hero = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
-              Constantly focused on learning JavaScript, and building beautiful website using TailwindCSS
+              Currently focused on learning JavaScript, and building beautiful website using TailwindCSS
             </motion.p>
-
-            <Link to={"About"}>
-              <motion.button
-                className="px-5 py-2 mt-2 text-sm font-bold text-white uppercase border-b-4 rounded-full bg-vBtn bg-v hover:bg-vBtnHover border-vBtnHover hover:border-v"
+            
+            <div className="flex gap-5 text-v mt-4">
+              <motion.a
+                href="mailto:77mojid77@gmail.com"
                 variants={fadeIn("down", 0.5)}
                 initial={"hidden"}
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
               >
-                About Me
-              </motion.button>
-            </Link>
-            <div className="flex gap-5 text-v mt-4">
+                <FaEnvelope size={25} />
+              </motion.a>
               <motion.a
                 href="https://github.com/skmojid"
                 variants={fadeIn("down", 0.5)}
@@ -126,6 +124,20 @@ const Hero = () => {
                 <FaTwitter size={25} />
               </motion.a>
             </div>
+
+            <Link to={"About"}>
+              <motion.button
+                className="px-5 py-2 mt-4 text-sm font-bold text-white uppercase border-b-4 rounded-full bg-vBtn bg-v hover:bg-vBtnHover border-vBtnHover hover:border-v"
+                variants={fadeIn("down", 0.5)}
+                initial={"hidden"}
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+              >
+                About Me
+              </motion.button>
+            </Link>
+
+
           </div>
         </div>
       </div>
