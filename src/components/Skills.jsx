@@ -1,4 +1,3 @@
-import React from "react";
 import skills from "../constants/skills";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
@@ -8,7 +7,7 @@ const Skills = () => {
   const name = "My skill-set.".split("");
 
   return (
-    <section>
+    <section id="skill">
       <div className="flex flex-col items-center justify-center w-full min-h-screen">
         {/*container*/}
         <div className="grid items-center w-full gap-8 justify-items-center">

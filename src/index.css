@@ -6,42 +6,44 @@
 
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
 
-  body {
-    font-family: "Poppins", sans-serif;
-    background-color: #F9F9F9;
-  }
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: #F9F9F9;
+    }
 
-  li {
-    @apply cursor-pointer;
-    /* @apply duration-75 ease-in hover:scale-110 hover:text-[#7c7cb3] hover:font-bold; */
-  }
+    li {
+        @apply cursor-pointer;
+        /* @apply duration-75 ease-in hover:scale-110 hover:text-[#7c7cb3] hover:font-bold; */
+    }
 
-  body::-webkit-scrollbar-horizontal {
-    display: none;
-  }
+    body::-webkit-scrollbar-horizontal {
+        display: none;
+    }
 
-  span {
-    display: inline-block;
-  }
+    span {
+        display: inline-block;
+    }
 
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
 
-  ::-webkit-scrollbar-thumb {
-    @apply bg-[#9191b3];
-    /* scroll bar color */
-    @apply rounded-full;
-  }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-[#9191b3];
+        /* scroll bar color */
+        @apply rounded-full;
+    }
 
-  ::-webkit-scrollbar-track {
-    @apply bg-gray-300;
-    /* bg scroll bar color */
-  }
+    ::-webkit-scrollbar-track {
+        @apply bg-gray-300;
+        /* bg scroll bar color */
+    }
 }
 
 .active {
-  @apply font-bold border-b-4 border-[#588157] duration-300 transition-all ease-in-out;
+    @apply font-bold border-b-4 border-[#588157] duration-300 transition-all ease-in-out;
 }
-

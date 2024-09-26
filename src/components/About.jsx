@@ -9,7 +9,7 @@ const Hero2 = () => {
   const name = "About me.".split("");
 
   return (
-    <section>
+    <section id="about">
       <div className="flex flex-col items-center justify-center w-full min-h-screen text-neutral-800 ">
         {/*container*/}
         <div className="grid items-center gap-4 md:gap-6 lg:gap-8 justify-items-center lg:grid-cols-2">
