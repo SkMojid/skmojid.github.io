@@ -1,25 +1,22 @@
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./components/About";
 import Portfolio from "./pages/Portfolio";
-import Footer from './components/Footer'
 import Header from "./components/Header";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Skills from "./components/Skills";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <AnimatePresence>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <>
+        <Header></Header>
+        <Home />
+        <About />
+        <Skills />
+        <Portfolio />
+      </>
     </AnimatePresence>
   );
-};
+}
 
 export default App;

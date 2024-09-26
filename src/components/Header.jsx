@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Sling as Hamburger } from "hamburger-react";
-import { NavLink, Link } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import Logo from "../images/Logo.png";
 
@@ -25,20 +24,20 @@ const Header = () => {
         } fixed px-4 w-full h-[70px] justify-between bg-white flex md:px-10 items-center z-10 `}
       >
         {/*logo header*/}
-        <Link to="/">
+        <a href="#">
           <img className="h-10 sm:max-h-10" src={Logo} alt="Logo image" />
-        </Link>
+        </a>
         {/*nav-links*/}
         <ul className="hidden gap-10 md:flex">
-          <NavLink to="/">
-            <li>Home</li>
-          </NavLink>
-          <NavLink to="/about">
+          <a href="#about">
             <li>About</li>
-          </NavLink>
-          <NavLink to="/portfolio">
+          </a>
+          <a href="#skill">
+            <li>Skill</li>
+          </a>
+          <a href="#portfolio">
             <li>Portfolio</li>
-          </NavLink>
+          </a>
         </ul>
 
         {/*side-menu icon*/}
@@ -72,15 +71,15 @@ const Header = () => {
         >
           <ul className="flex flex-col text-3xl font-semibold text-white gap-7 pt-[60px]">
             <hr className="border-2 rounded-lg border-slate-200" />
-            <Link to="/" onClick={handleClick}>
-              <li>Home</li>
-            </Link>
-            <Link to="/about" onClick={handleClick}>
+            <a href="#about" onClick={() => setOpen(false)}>
               <li>About</li>
-            </Link>
-            <Link to="/portfolio" onClick={handleClick}>
+            </a>
+            <a href="#skill" onClick={() => setOpen(false)}>
+              <li>Skill</li>
+            </a>
+            <a href="#portfolio" onClick={() => setOpen(false)}>
               <li>Portfolio</li>
-            </Link>
+            </a>
           </ul>
           <div className="flex gap-5 text-slate-200">
             <a href="https://github.com/skmojid">

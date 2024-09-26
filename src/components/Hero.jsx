@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
-import { Link } from "react-router-dom";
 import TextSpan from "../utils/textSpan";
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaEnvelope } from "react-icons/fa";
 import avatar from "../images/Home.jpg";
@@ -76,7 +75,7 @@ const Hero = () => {
             >
               Currently focused on learning JavaScript, and building beautiful website using TailwindCSS
             </motion.p>
-            
+
             <div className="flex gap-5 text-v mt-4">
               <motion.a
                 href="mailto:77mojid77@gmail.com"
@@ -125,7 +124,7 @@ const Hero = () => {
               </motion.a>
             </div>
 
-            <Link to={"About"}>
+            <a href="#about">
               <motion.button
                 className="px-5 py-2 mt-4 text-sm font-bold text-white uppercase border-b-4 rounded-full bg-vBtn bg-v hover:bg-vBtnHover border-vBtnHover hover:border-v"
                 variants={fadeIn("down", 0.5)}
@@ -135,7 +134,7 @@ const Hero = () => {
               >
                 About Me
               </motion.button>
-            </Link>
+            </a>
 
 
           </div>
